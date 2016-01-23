@@ -23,7 +23,7 @@ nav{
 	text-align: center;
 	list-style-type:none;
 	background-color:white;
-	position:relative;
+	position:absolute;
 	
 	
 	
@@ -33,6 +33,8 @@ nav a{
 	padding: 30px;
 	border-bottom:1px solid #56a7a9;
 	text-decoration:None;
+	list-style-type:none;
+	position:absolute;
 	
 	
 
@@ -50,6 +52,7 @@ nav a:hover{
 	left: -240px;
 	transition: all .3s ease-in-out;
 	
+	
 
 }
 .menu-icon{
@@ -59,9 +62,12 @@ nav a:hover{
 	cursor: pointer;
 	float: right;
 	border-radius: 10px;
+	
+	
 }
 #menuToggle{display:none;}
 #menuToggle:checked ~ .menu{position: absolute; left: 0;}
+#menuToggle:checked ~ .menu-icon{position:absolute left:240;}
 
 	</style>
 <nav class="menu">
