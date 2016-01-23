@@ -42,7 +42,7 @@ nav a:hover{
 .menu{
 	width: 240px;
 	height:100%;
-	position:absolute;
+	position:top;
 	background:#EEE;
 	left: -240px;
 	transition: all .3s ease-in-out;
@@ -56,7 +56,7 @@ nav a:hover{
 	float: right;
 	border-radius: 10px;
 }
-#menuToggle:checked ~ .menu{position: absolute; left: 0;}
+#menuToggle:checked ~ .menu{position: absolute; left: 0; visibility:none;}
 
 	</style>
 <nav class="menu">
